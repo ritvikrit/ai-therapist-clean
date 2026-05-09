@@ -118,6 +118,8 @@ async def voice_chat(audio: UploadFile = File(...)):
 # -----------------------------
 # ROOT ENDPOINT
 # -----------------------------
+from fastapi.responses import FileResponse
+
 @app.get("/")
 async def root():
-    return {"status": "online", "agent": "AI Therapist"}
+    return FileResponse("index.html")
