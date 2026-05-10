@@ -55,3 +55,22 @@ An AI-powered voice therapy application built with FastAPI and OpenAI's API.
 ## License
 
 MIT
+Complete Flow
+
+User Speaks
+      ↓
+Frontend Records Audio
+      ↓
+FastAPI Receives Audio
+      ↓
+Whisper converts Voice → Text
+      ↓
+GPT processes text with your therapist prompt
+      ↓
+GPT generates response text
+      ↓
+TTS converts Text → Voice
+      ↓
+Audio streamed back to frontend
+      ↓
+User hears AI response
